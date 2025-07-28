@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pulsa Gratis</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🎁 Klaim Pulsa Gratis!</h1>
+    <p>Isi data berikut untuk mendapatkan pulsa gratis:</p>
+
+    <form id="pulsaForm">
+      <label for="provider">Provider:</label>
+      <select id="provider" required>
+        <option value="">-- Pilih Provider --</option>
+        <option>Telkomsel</option>
+        <option>Indosat</option>
+        <option>XL</option>
+        <option>Axis</option>
+        <option>Tri</option>
+        <option>Smartfren</option>
+      </select>
+
+      <label for="nomor">Nomor HP:</label>
+      <input type="tel" id="nomor" placeholder="08xxxxxxxxxx" required>
+
+      <label for="nominal">Nominal Pulsa:</label>
+      <select id="nominal" required>
+        <option value="">-- Pilih Nominal --</option>
+        <option>Rp 5.000</option>
+        <option>Rp 10.000</option>
+        <option>Rp 20.000</option>
+        <option>Rp 50.000</option>
+      </select>
+
+      <button type="submit">Klaim Sekarang 🚀</button>
+    </form>
+
+    <div id="hasil" style="display:none; margin-top:20px;"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
